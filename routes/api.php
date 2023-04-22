@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Benefits\BenefitsController;
 use App\Http\Controllers\Characteristics\CharacteristicsController;
+use App\Http\Controllers\Contacts\ContactsController;
 use App\Http\Controllers\Header\HeaderController;
 use App\Http\Controllers\Netwoks\NetworksController;
 use Illuminate\Support\Facades\Route;
@@ -28,3 +29,6 @@ Route::get('benefits',[BenefitsController::class,'index']);
 
 //Networks
 Route::get('networks',[NetworksController::class,'index']);
+
+//contacts
+Route::get('contacts',[ContactsController::class,'index']);
